@@ -1,0 +1,4 @@
+To access the last characjter from a string, we can use [-1] negative index to count from the last charachter.
+
+USeful websites:
+https://thonny.org/  --to learn python's step by step processing

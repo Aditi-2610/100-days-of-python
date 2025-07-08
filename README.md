@@ -11,4 +11,5 @@ Follow along to see what I build each day 🚀
 |-----|-------|------|
 | 01  | Working with Variables | [Day 1](./day01) |
 | 02  | Understanding data types | [Day 2](./day02/) |
+| 03  | Control Flow and Logical operators | [Day 3](./day03/) |
 

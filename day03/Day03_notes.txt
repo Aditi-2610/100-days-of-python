@@ -1,0 +1,19 @@
+Modulo operator:%
+gives the remainder from the division between two numbers
+10%5 = 0
+10%3 = 1
+
+Logical operators:
+AND : both of them MUST be True for the statement to be True
+OR : any one of the conditions must be True 
+NOT : Reverses the condition
+
+Multiple lines in a print statement?
+Use ''' and ''' in the code
+
+
+For ASCII art :
+https://ascii.co.uk/art
+
+Escape symbol in print statement:
+print('You\'re at a crossroad')
