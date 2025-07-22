@@ -14,5 +14,7 @@ Follow along to see what I build each day 🚀
 | 03  | Control Flow and Logical operators | [Day 3](./day03/) |
 | 04  | Randomisation with Lists | [Day 4](./day04/) |
 | 05  | For loop, range with Lists | [Day 5](./day05/) |
+| 06  | Learn python functions with Reeborg's world | [Day 6](./day06/) |
+| 07  | The Hangman game | [Day 7](./day07/) |
 
 
