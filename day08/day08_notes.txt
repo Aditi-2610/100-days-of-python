@@ -1,0 +1,20 @@
+Ceaser cypher is an en coding concept where a letter is shifted by a certain number of places, suppose we want to encrypt A and the number to shift by is 3, then A becomes D
+A(0), B(1), C(2), D(3)
+
+Argument and parameter:
+
+def greet_with_name(name):  #name is the parameter
+    print(f"HEllo {name}")
+
+greet_with_name("Aditi") #"Aditi" is the argument
+
+Positional argument and key word argument:
+def greet_with(name, location):
+    print(f"Hello {name}")
+    print(f"What is it like in {location}")
+
+greet_with("Aditi", "Milwaukee") #this is positional arguments,
+# depends on which is given first will be the first parameter and the second argument is the second parameter
+
+#This is keyword arguments, in which we mention the parameter , the argument associates with
+greet_with(location="Wisconsin", name="Bob")
