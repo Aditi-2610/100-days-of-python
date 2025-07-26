@@ -16,5 +16,7 @@ Follow along to see what I build each day 🚀
 | 05  | For loop, range with Lists | [Day 5](./day05/) |
 | 06  | Learn python functions with Reeborg's world | [Day 6](./day06/) |
 | 07  | The Hangman game | [Day 7](./day07/) |
-
+| 08  | Function parametrs and arguments with Ceasar Cypher | [Day 8](./day08/) |
+| 09  | Dictionaries and Nesting with Blind bidding | [Day 9](./day09/) |
+| 10  | Functions and Recursions with Calculator app | [Day 10](./day10/) |
 
