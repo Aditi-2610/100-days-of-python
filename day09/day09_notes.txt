@@ -1,0 +1,34 @@
+Python Dictionaries
+{Key : Value}
+eg {"Bug":"An error that prevents a program to run"}
+to make them more readable:
+programming_dictionary = {
+    "bug" : "its definition",
+    "funtion" : "its definition", 
+    123 : "its Value"
+}
+
+If you are fetching something from the dictionary:
+programming_dictionary["bug"]
+programming_dictionary[123]
+
+To add items iin it:
+programming_dictionary["Loop"] = "The action of doing over and over"
+
+
+Wipe an existing dictionary:
+programming_dictionary = {}
+
+Edit an item in dictionary:
+programming_dictionary["bug"] = "a different value"
+
+Loop through the dictionary:
+for thing in programming_dictionary:
+    print(thing)  //prints only the keys from the dictionary
+    print(programming_dictionary[key]) //will print the value
+
+Nesting:
+{
+    key : [A list, and, its , items],
+    key2 : {another dictionary}
+}
