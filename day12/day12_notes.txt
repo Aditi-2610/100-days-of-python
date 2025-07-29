@@ -1,0 +1,18 @@
+Local scope:
+Variables (or functions) declared inside functions have local scope (also called function scope). They are only seen by other code within the same block of code.
+
+Global Scope
+Variables or functions declared at the top level (unindented) of a code file have global scope. It is accessible anywhere in the code file.
+
+There is no block scope in python
+
+
+You can define global constants in your code file for easy access. Their job is meant to be "set and forget" so you can use their values but never need to mofy them.
+
+Naming Convention
+Global constants are normally declared in ALL_CAPS with a underscore in between.
+PI = 3.14159
+GOOGLE_URL = "https://www.google.com"
+
+The link for creating ASCII art:
+ https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
