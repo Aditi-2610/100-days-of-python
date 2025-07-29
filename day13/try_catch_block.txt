@@ -1,0 +1,19 @@
+try: 
+ //condition to check
+ //usually ann error you could get for a wrong input/ condition e.g. ValueError
+
+except TypeError: //the type of error you would encounter
+ //what to do if it does
+
+ e.g.
+ 
+try:
+
+    age = int(input("How old are you?"))
+
+except TypeError:
+    print("You can't mix integers and strings in a comparison")
+    age = int(input("How old are you?")) #give them one more chance to enter the value
+
+if age > 18:
+    print(f"You can drive at age {age}.")

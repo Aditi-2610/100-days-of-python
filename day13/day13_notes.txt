@@ -1,0 +1,12 @@
+Debugging : How to find and fix the errors in our code:
+
+1. Try to understand and describe the problem
+2. Replicate / reproduce the bug. If we cant reproduce then it becomes a difficult bug. When does it happen and then we try to fix it
+3. Play computer and evaluate each line
+4. Fixing errors and watch for the red lines
+5. try using print() statements in between 
+6. Use a debugger
+7. Take a break. Sleep over it. Come back with a fresh eyes
+8. Ask a friend
+9. Run your code often, once you change it slightly try and run it and tackle it one at a time
+10. Stack over flow
