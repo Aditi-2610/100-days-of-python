@@ -1,0 +1,117 @@
+The Blackjack game / 21 game
+
+Add up you cards to your largest number without going over 21
+If the cards in your hands go over 21, then its called a bust
+and means that you lose immediatedly
+How to count:
+2 to 10 are counted as the face value
+the J, Q, and K each count as 10
+the A is counted as 1 or 11
+if both are 20 and 20 , its a draw
+If the dealer has 17 or under then they must take another card
+
+WE are assuming that the A is 11 unless the user goes over 21
+and its an unlimited deck.
+
+
+import random
+from art import logo
+
+print(logo)
+cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+
+
+def ace_decision(cards_list, list_total):
+    if list_total > 21:
+        if 11 in cards_list :
+            for card in cards_list:
+                if card == 11 :
+                    card = 1
+                    list_total = sum(cards_list)
+
+    return list_total
+
+def display_final_scores(player_scores, player_cards, computer_scores, computer_cards):
+    print(f"Your Cards : {player_cards}, Final score : {player_scores}")
+    print(f"Computer Cards : {computer_cards}, Final score : {computer_scores}")
+
+
+to_continue = input("Do you want to play a game of Blackjack? Type 'y' or 'n':  ").lower()
+while to_continue == 'y':
+    print("\n" * 30)
+    print(logo)
+    players_cards = []
+    computers_cards = []
+    # TODO 1. Give User two cards
+    players_cards.append(random.choice(cards))
+    players_cards.append(random.choice(cards))
+    # TODO 2. Give Computer two cards
+    computers_cards.append(random.choice(cards))
+    computers_cards.append(random.choice(cards))
+    # TODO 3. Calculate total for both
+    computer_total = sum(computers_cards)
+    player_total = sum(players_cards)
+    print(f"Your Cards : {players_cards}, current score : {player_total}")
+    print(f"Computer's first card : {computers_cards[0]}")
+    get_card = input("Type 'y' to get another card, type 'n' to pass. ").lower()
+    if get_card not in ['y', 'n']:
+        print("Wrong input! Exiting...")
+        break
+    game_over = False
+    if computer_total == 21:
+        print("Blackjack! Computer wins!")
+        display_final_scores(player_total, players_cards, computer_total, computers_cards)
+        break
+    elif player_total == 21:
+        print("Blackjack! Player wins1")
+        display_final_scores(player_total, players_cards, computer_total, computers_cards)
+        break
+    else:
+        while get_card == 'y':
+            players_cards.append(random.choice(cards))
+            player_total = sum(players_cards)
+            player_total = ace_decision(players_cards, player_total)
+            print(f"Your Cards : {players_cards}, current score : {player_total}")
+            if player_total > 21:
+                print("You went over! Computer wins!")
+                display_final_scores(player_total, players_cards, computer_total, computers_cards)
+                game_over = True
+                break
+            else:
+                get_card = input("Type 'y' to get another card, type 'n' to pass. ").lower()
+
+        if not game_over:
+            while computer_total <= 16 :
+                computers_cards.append(random.choice(cards))
+                computer_total = sum(computers_cards)
+
+
+            computer_total = ace_decision(computers_cards, computer_total)
+            player_total = ace_decision(players_cards, player_total)
+            if computer_total < player_total:
+                print("Player wins!")
+                display_final_scores(player_total, players_cards, computer_total, computers_cards)
+
+            elif computer_total > player_total and computer_total <=21:
+                print("Computer wins!")
+                display_final_scores(player_total, players_cards, computer_total, computers_cards)
+
+            elif computer_total > player_total and computer_total > 21:
+                print("Computer went over! Player wins!")
+                display_final_scores(player_total, players_cards, computer_total, computers_cards)
+
+            else:
+                print("Its a DRAW!")
+                display_final_scores(player_total, players_cards, computer_total, computers_cards)
+
+    to_continue = input("Do you want to play a game of Blackjack? Type 'y' or 'n':  ").lower()
+    if to_continue == 'n':
+        print("Thank you for playing! Goodbye.")
+    else:
+        print("Wrong input exiting...")
+
+
+
+
+
+
