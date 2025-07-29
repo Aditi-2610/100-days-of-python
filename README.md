@@ -19,4 +19,5 @@ Follow along to see what I build each day 🚀
 | 08  | Function parametrs and arguments with Ceasar Cypher | [Day 8](./day08/) |
 | 09  | Dictionaries and Nesting with Blind bidding | [Day 9](./day09/) |
 | 10  | Functions and Recursions with Calculator app | [Day 10](./day10/) |
-
+| 11  | Capstone : The Blackjack game | [Day 11](./day11/) |
+| 12  | Global and Local scope with Number guessing name | [Day 12](./day12/) |
