@@ -1,0 +1,15 @@
+Class is the blueprint and the object is the actual thing we use for its functinality
+car = CarBlueprint
+
+Turte Graphics : https://docs.python.org/3/library/turtle.html
+https://cs111.wellesley.edu/reference/colors
+
+
+PyPI : place that we would do that is somewhere called PyPI, which is the Python Package Index.
+a package differs from a module in the sense that it's actually a whole bunch of code that other
+people have written. Lots and lots of files, all packaged together to achieve some sort of goal or purpose.
+
+how to install the package: 
+settings ->  your project -> interpretor ->available packages
+
+PrettyTable : https://code.google.com/archive/p/prettytable/wikis/Tutorial.wiki

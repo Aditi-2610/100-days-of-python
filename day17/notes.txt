@@ -1,0 +1,48 @@
+class Car:
+    ""class keyword
+    ""indented 
+    pass
+    use pass if you dont want to pass through the class, or keep an empty class
+
+
+user1 = Car() <- object creation 
+
+The name of class should have PascalCase
+snake_case for everything else
+
+attribute creation:
+user1.id = "001"
+user1.username = "angela"
+
+print(user1.username) 
+
+Constructor: is a part of the blue print that 
+allows us to specify what should happen when our obj 
+is being constructed
+initialize by using a special function:
+__init__
+
+class Car:
+    def __init__(self):
+    called everytime you make a new object of this class
+
+    def __init__(self,seats):
+        self.seats = seats
+
+my_car = Car(5)
+
+Method:
+when a function is attached to an object, it is called a methid
+A method should always have the first parameter as self, so it know the object that calls it
+    class Car:
+        def enter_race_mode(self, user);
+            self.seats = 2
+
+    Car.enter_race_mode()
+
+
+
+Open Trivia Database:
+open source free to user contirbuted trivia database
+https://opentdb.com/
+open the copied url and copy and paste the data in your program
